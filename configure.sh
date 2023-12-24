@@ -3,6 +3,7 @@ projectName="$2"
 
 git init || exit
 git add -A || exit
+git git restore --staged configure.sh
 git commit -m "first commit" || exit
 git branch -M main || exit
 git remote add origin "$remote" || exit
